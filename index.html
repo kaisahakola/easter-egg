@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Easter Egg</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="./assets/scripts/onClick.js"></script>
+    <script src="assets/scripts/handleNo.js"></script>
+    <script src="assets/scripts/handleYes.js"></script>
 </head>
 <body>
-    <div>Will you be my Easter egg?</div>
+    <div class="wrapper">
+        <h1 class="title">Will you be my Easter Egg?</h1>
+        <img
+                src="./assets/images/egg-smiling.jpeg"
+                alt="easter egg themed image or gif"
+                id="easter-egg-image"
+                width="300"
+                height="300"
+        >
+        <div class="buttons">
+            <button id="yes" class="button" onclick="onClick('yes')">Yes</button>
+            <button id="no" class="button" onclick="onClick('no')">No</button>
+        </div>
+        <div id="she-said-yes">
+            <p>Yess! Thank you, I will be your Easter Egg too :)</p>
+        </div>
+    </div>
 </body>
 </html>
