@@ -3,11 +3,35 @@ body {
     background-color: #aed6ae;
 }
 
+@media screen and (max-width: 1200px) {
+    .title {
+        font-size: 8rem;
+    }
+
+    .button {
+        width: 200px;
+        height: 75px;
+        font-size: 40px;
+    }
+
+    .button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    #easter-egg-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
 .wrapper {
     text-align: center;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    padding-top: 10%;
+}
+
+.wrapper {
     padding-top: 5%;
 }
 
@@ -19,15 +43,10 @@ body {
 .button {
     width: 100px;
     height: 50px;
-    font-weight: bold;
     font-size: 20px;
     border-radius: 8px;
     color: white;
-
-    &:hover {
-        cursor: pointer;
-        opacity: 0.7;
-    }
+    margin: 10px;
 }
 
 #yes {
